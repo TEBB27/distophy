@@ -113,6 +113,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aqua;
     height: 100px;
 }
 .contenedor-div1__h1{
