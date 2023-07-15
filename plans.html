@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DISTOPHY</title>
+        <link rel="stylesheet" type="text/css" href="cssplans.css">
+        <link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/af27f80199.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container1">
+                <p class="container1__p">DISTOPHY</p>
+            </div>
+            <div class="container2">
+                <nav class="container2-nav">
+                    <ul class="container2-nav-ul">
+                        <li class="container2-nav-ul__li"><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></li>
+                        <li class="container2-nav-ul__li"><i class="fa-solid fa-code"></i><a href="plans.html">Planes</a></li>
+                        <li class="container2-nav-ul__li"><i class="fa-solid fa-terminal"></i><a href="">Trabajos</a></li>
+                        <li class="container2-nav-ul__li"><i class="fa-solid fa-address-card"></i><a href="">Sobre Nosotros</a></li>
+                        <li class="container2-nav-ul__li"><i class="fa-solid fa-envelope"></i><a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container3">
+            </div>
+        </div>
+        <div class="container-responsive">
+            <div class="container-responsive1">
+                <p class="container-responsive1__p">DISTOPHY</p>
+            </div>
+            <div class="container-responsive2">
+                <nav class="container-responsive2-nav">
+                    <ul class="container-responsive2-nav-ul">
+                        <li class="container-responsive2-nav-ul__li"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="contenedor-div1">
+                <h1 class="contenedor-div1__h1">PLANES</h1>
+            </div>
+            <div class="contenedor-div2">
+                <div class="contenedor-div2-div">
+                    <div class="contenedor-div2-div-p">
+                        <p class="contenedor-div2-div__p">BÁSICO</p>
+                    </div>
+                    <div class="contenedor-div2-div-boton">
+                            <div id="paypal-button-container-P-2PD30671SJ387983KMSY7L3Y"></div>
+                            <script src="https://www.paypal.com/sdk/js?client-id=Aei-w66wLboSnZOGwL8cttUOUA8_dI3Y6DU85u5d6T918iZ7Qe80shOp-4ez_glVAwqBMKwfrQ1ppF6i&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+                            <script>
+                              paypal.Buttons({
+                                  style: {
+                                      shape: 'pill',
+                                      color: 'black',
+                                      layout: 'horizontal',
+                                      label: 'subscribe'
+                                  },
+                                  createSubscription: function(data, actions) {
+                                    return actions.subscription.create({
+                                      /* Creates the subscription */
+                                      plan_id: 'P-2PD30671SJ387983KMSY7L3Y'
+                                    });
+                                  },
+                                  onApprove: function(data, actions) {
+                                    alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                                  }
+                              }).render('#paypal-button-container-P-2PD30671SJ387983KMSY7L3Y'); // Renders the PayPal button
+                            </script>
+                    </div>
+                </div>
+                <div class="contenedor-div2-div">
+                    <div class="contenedor-div2-div-p">
+                        <p class="contenedor-div2-div__p">ESTANDAR</p>
+                        </div>
+                        <div class="contenedor-div2-div-boton">
+                        </div>
+                </div>
+                <div class="contenedor-div2-div">
+                    <div class="contenedor-div2-div-p">
+                    <p class="contenedor-div2-div__p">PREMIUM</p>
+                    </div>
+                    <div class="contenedor-div2-div-boton">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
